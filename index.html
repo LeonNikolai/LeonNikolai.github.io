@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>418 I'm a teapot</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 50px;
+        overflow-x: hidden;
+      }
+      h1 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(8ch, 1fr));
+        gap: 5px;
+      }
+      span {
+        display: block;
+        color: green;
+        animation: blink 1s infinite;
+      }
+      @keyframes blink {
+        0% {
+          transform: translateY(-1%);
+        }
+        50% {
+          transform: translateX(1%);
+        }
+        100% {
+          transform: translateY(-1%);
+        }
+      }
+      span:nth-child(odd) {
+        color: rgb(0, 87, 6);
+        animation-delay: 0.5s;
+      }
+      span:nth-child(5n) {
+        color: rgb(0, 255, 0);
+        animation-duration: 0.5s;
+      }
+      span:nth-child(4n) {
+        color: rgb(50, 118, 50);
+        animation-delay: 0.25s;
+      }
+      span:nth-child(6n) {
+        color: rgb(174, 255, 174);
+        animation-duration: 1s;
+      }
+      span:nth-child(7n) {
+        animation-delay: 0.7s;
+      }
+      span:nth-child(8n) {
+        animation-delay: 0.1s;
+      }
+      span:nth-child(9n) {
+        animation-delay: 0.2s;
+        color: rgb(0, 244, 118);
+      }
+      span:hover {
+        color: rgb(255, 0, 0);
+      }
+      ::selection {
+        background-color: #00000000;
+        color: #00000000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <span>01010011</span><span>01100101</span><span>01001011</span
+      ><span>01000001</span><span>01101101</span><span>01011000</span
+      ><span>01011010</span><span>01101100</span><span>01001001</span
+      ><span>01000111</span><span>01101000</span><span>01101000</span
+      ><span>01011001</span><span>00110010</span><span>01110100</span
+      ><span>01101100</span><span>01011010</span><span>01000011</span
+      ><span>01000010</span><span>01110000</span><span>01100010</span
+      ><span>01101110</span><span>01010010</span><span>01110110</span
+      ><span>01001001</span><span>01000111</span><span>01110000</span
+      ><span>00110001</span><span>01100011</span><span>00110011</span
+      ><span>01010001</span><span>01100111</span><span>01011001</span
+      ><span>01010111</span><span>01001010</span><span>01110110</span
+      ><span>01100100</span><span>01011000</span><span>01010001</span
+      ><span>01100111</span><span>01011001</span><span>01010111</span
+      ><span>01111000</span><span>01110011</span><span>01001001</span
+      ><span>01001000</span><span>01010010</span><span>01101111</span
+      ><span>01011010</span><span>01010011</span><span>01000010</span
+      ><span>01110000</span><span>01100010</span><span>01101101</span
+      ><span>01011010</span><span>01110110</span><span>01100011</span
+      ><span>01101101</span><span>00110001</span><span>01101000</span
+      ><span>01100100</span><span>01000111</span><span>01101100</span
+      ><span>01110110</span><span>01100010</span><span>01101001</span
+      ><span>01000010</span><span>01001010</span><span>01001001</span
+      ><span>01000111</span><span>00110101</span><span>01101100</span
+      ><span>01011010</span><span>01010111</span><span>01010001</span
+      ><span>01110101</span>
+    </h1>
+  </body>
+</html>
